@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<title>Currency convertor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="This is a simple Currency convertor, which gets data from own server." />
+    <meta name="keywords" content="front end, developer, web development, responsive, HTML, CSS, Javascript" />
+    <meta name="author" content="Vladimir Karatosic" /> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" ></script>
+</head>
+<body >
+	<div class="convertor-frame"> 
+		<h1>CURRENCY CONVERTOR</h1>
+		<form class="currency-form">
+			<select name="left-currency" class="fromSelection same-excluded">
+				<option value="EUR" class="eur-left" selected>EUR</option>
+				<option value="USD" class="usd-left">USD</option>
+				<option value="RSD" class="rsd-left">RSD</option>
+				<input type="text" name="left-input" class="convertFrom" />	
+			</select>
+			<img src="images/swap.svg" alt="swap currency" class="image">
+			<select name="right-currency" class="toSelection same-excluded">
+				<option value="RSD" class="rsd-right" selected>RSD</option>
+				<option value="USD" class="usd-right">USD</option>
+				<option value="EUR" class="eur-right">EUR</option>
+				<input type="text" name="righ-input" class="convertTo" disabled />
+			</select>
+			<p class="error-message">Please enter a number</p>
+			<p class="demo"></p>
+			<br><br>
+			<button type="button" class="buttonReset">Reset</button>
+		</form>
+	</div>
+	<script>
+		window.onerror = function(errorMsg, url, lineNumber) {
+			alert('Error: '+ errorMsg + ' , at line number: ' + lineNumber);
+		}
+	</script>
+	<script src="js/script.js"></script>
+</body>
+</html>
