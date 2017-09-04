@@ -80,13 +80,13 @@ $(".convertFrom").on({
 				var num2 = parseFloat($(".convertFrom").val() * EURUSD);
 				$(".convertTo").val(num2.toFixed(2));
 			} else if($(".fromSelection").val() == "RSD" && $(".toSelection").val() == "EUR") {
-				var num3 = parseFloat($(".convertFrom").val() * RSDEUR);
+				var num3 = parseFloat($(".convertFrom").val() / RSDEUR);
 				$(".convertTo").val(num3.toFixed(2));				
 			} else if($(".fromSelection").val() == "USD" && $(".toSelection").val() == "EUR") {
 				var num4 = parseFloat($(".convertFrom").val() * USDEUR);
 				$(".convertTo").val(num4.toFixed(2));				
 			} else if($(".fromSelection").val() == "RSD" && $(".toSelection").val() == "USD") {
-				var num5 = parseFloat($(".convertFrom").val() * RSDUSD);
+				var num5 = parseFloat($(".convertFrom").val() / RSDUSD);
 				$(".convertTo").val(num5.toFixed(2));				
 			} else if($(".fromSelection").val() == "USD" && $(".toSelection").val() == "RSD") {
 				var num6 = parseFloat($(".convertFrom").val() * USDRSD);
