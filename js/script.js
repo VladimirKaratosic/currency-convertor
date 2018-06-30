@@ -17,8 +17,8 @@ $(document).ready(function(){
 	});
 
 	
-		$fromSelection.children("[value='RSD']").prop('disabled', true);
-		$toSelection.children("[value='EUR']").prop('disabled', true);	
+	$fromSelection.children("[value='RSD']").prop('disabled', true);
+	$toSelection.children("[value='EUR']").prop('disabled', true);	
 	
 });
 
